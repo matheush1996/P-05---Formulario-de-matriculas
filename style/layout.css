@@ -1,0 +1,31 @@
+#app{ 
+  display: grid;
+  grid-template-columns: 51.25% 48.75%; /*Determinamos que cada caixa dentro da tag pai ocupará 50% do espaço da tela*/
+
+  height: 100vh; /*viewport heigth - é toda a a parte visível da nossa tela*/
+  overflow: hidden;
+}
+
+main{
+  overflow: auto; /*Utilizado para criar a barra de rolagem quando o conteúdo vazar*/
+  padding: 4rem;
+
+  .main-container{ 
+
+    max-width: 33rem;
+    margin-left: auto;
+
+  }
+  /*Estrutura conhecida como css nesting, consites em colocar um seletor dentro de outro seletor. Só é importante atentar-se a versão do navegador*/
+}
+
+
+aside{
+  padding: 4rem;
+  background-color: var(--surface-secondary);
+
+  .aside-main{
+    max-width: 31rem;
+  }
+}
+

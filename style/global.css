@@ -35,3 +35,7 @@
 
 
 }
+
+body{
+  overflow: hidden; /*Utilizado para determinar que nossa página não terá rodagem "scrol", por conta que tudo o que transbordar, não ficará visível.*/
+}
