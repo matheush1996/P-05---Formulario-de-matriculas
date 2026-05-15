@@ -17,6 +17,18 @@ main{
 
   }
   /*Estrutura conhecida como css nesting, consites em colocar um seletor dentro de outro seletor. Só é importante atentar-se a versão do navegador*/
+
+  .back{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h1{
+    font: 600 1.5rem/1.25 var(--font-family);
+    margin-bottom: .5rem;
+  }
 }
 
 
@@ -24,8 +36,22 @@ aside{
   padding: 4rem;
   background-color: var(--surface-secondary);
 
-  .aside-main{
+  .aside-container{
     max-width: 31rem;
+
+    & > img{ 
+      margin-top: 2rem;
+    }
+    /*O & quer dizer que ele quer buscar o que está dento do .aside-container*/
+  }
+
+  h2{
+    font: 600 2.5rem/1.25 var(--font-family);
+    margin-bottom: .5rem;
+
+    strong{
+      color: var(--text-highlight);
+    }
   }
 }
 

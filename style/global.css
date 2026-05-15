@@ -38,4 +38,16 @@
 
 body{
   overflow: hidden; /*Utilizado para determinar que nossa página não terá rodagem "scrol", por conta que tudo o que transbordar, não ficará visível.*/
+
+  font: var(--text);
+  color: var(--text-secondary);
+}
+
+h1, h2{
+  color: var(--text-primary);
+}
+
+img{
+  max-width: 100%; /*Usado para responsividade, determina que o elemento seja menor que o tamanho original, mas nunca ultrpasse a largura do pai*/
+  height: auto;
 }
