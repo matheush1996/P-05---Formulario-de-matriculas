@@ -1,3 +1,5 @@
+@import url(droparea.css);
+
 input, textarea, select{
   appearance: none;
   width: 100%;
@@ -17,11 +19,14 @@ label{
 
 input:focus, 
 select:focus, 
-textarea:focus{
+textarea:focus,
+input[type="date"]:focus-within{
 outline: .25rem solid var(--surface-secondary);
 border: .125rem solid var(--stroke-highlight);
 
 /* Aqui definimos que quando clicarmos numa determinada caixa, ela ganhará um foco */
+
+/*focus-within vai buscar algum elemento em foco dentro da caixa e aplicar para si*/
 }
 
 input[type="date"] {

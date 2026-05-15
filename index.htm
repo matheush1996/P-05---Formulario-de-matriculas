@@ -69,21 +69,30 @@
             name="medical-info"
             id="medical-info"
             cols="30"
-            rows="10"
+            rows="5"
             placeholder="A criança possui alguma condição médica que a escola deve estar ciente? (Se sim, espeficique)">
             </textarea>
           </div>
 
           <div class="droparea-wrapper">
-            <input 
-             type="file" 
-            id="birth-file" 
-            name="birth-file">
-            <img src="assets/icons/cloud-upload.svg" alt="Imagem de upload">
-            <p>
-              Clique aqui para <br>
-              Selecionar os arquivos
-            </p>
+
+            <label for="birth-file">Certidão de Nascimento</label>
+
+            <div class="drop-zone">
+
+              <input 
+              type="file" 
+              id="birth-file" 
+              name="birth-file">
+              <img src="assets/icons/cloud-upload.svg" alt="Imagem de upload">
+              <p>
+               Clique aqui para <br>
+               Selecionar os arquivos
+              </p>
+
+            </div>
+
+          
           </div>
 
             <!-- O label está conectado ao input por conta do for + id 
