@@ -1,0 +1,43 @@
+input, textarea, select{
+  appearance: none;
+  width: 100%;
+  border-radius: .5rem;
+  border: 1px solid var(--stroke-default);
+  padding: .75rem 1rem;
+  font: var(--text);
+}
+
+label{
+  display: block; /*Label é inline e inline não aceita medidas de margin*/
+
+  font: var(--text-sm);
+  color: var(--text-secondary);
+  margin-bottom: .25rem;
+}
+
+input:focus, 
+select:focus, 
+textarea:focus{
+outline: .25rem solid var(--surface-secondary);
+border: .125rem solid var(--stroke-highlight);
+
+/* Aqui definimos que quando clicarmos numa determinada caixa, ela ganhará um foco */
+}
+
+input[type="date"] {
+  /*Está é a forma de chamar um input - NÃO PODE HAVER ESPAÇOS*/
+
+  position: relative;
+  &::-webkit-calendar-picker-indicator {
+    position: absolute;
+    background: url(../../assets/icons/calendar-03.svg) center/contain; right: 1rem;
+
+  }
+
+}
+
+
+select{
+  background: url(../../assets/icons/arrow-down-01.svg)
+  no-repeat calc(100% - 1rem); /*Essa é uma forma de efetuar calculos no CSS*/
+}
