@@ -16,7 +16,7 @@ main{
     margin-left: auto;
 
   }
-  /*Estrutura conhecida como css nesting, consites em colocar um seletor dentro de outro seletor. Só é importante atentar-se a versão do navegador*/
+  /*Estrutura conhecida como css nesting, consiste em colocar um seletor dentro de outro seletor. Só é importante atentar-se a versão do navegador*/
 
   .back{
     display: flex;

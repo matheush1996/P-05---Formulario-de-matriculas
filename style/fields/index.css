@@ -24,7 +24,7 @@ input[type="date"]:focus-within{
 outline: .25rem solid var(--surface-secondary);
 border: .125rem solid var(--stroke-highlight);
 
-/* Aqui definimos que quando clicarmos numa determinada caixa, ela ganhará um foco */
+/* Aqui definimos que quando clicarmos numa determinada caixa, ela ganhará um foco e podemos alterar cores */
 
 /*focus-within vai buscar algum elemento em foco dentro da caixa e aplicar para si*/
 }
@@ -45,4 +45,22 @@ input[type="date"] {
 select{
   background: url(../../assets/icons/arrow-down-01.svg)
   no-repeat calc(100% - 1rem); /*Essa é uma forma de efetuar calculos no CSS*/
+}
+
+.address .flex{
+  gap: 1.25rem;
+}
+
+.input-wrapper:has([disabled]){
+  opacity: .5;
+  /* Estamos buscando dentro da classe input-wrapper, o atributo "disabled" para efetuar a opacidade */
+}
+
+input{
+  &[disabled]{
+    background-color: var(--surface-disabled);
+    border: 1px solid var(--stroke-default);
+    color: var(--text-primary);
+  }
+  /* Aqui é quase a mesma ideia de cima, mas é mais no sentido de "O input que seja desabilitado... faça isso:" */
 }
