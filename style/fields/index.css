@@ -57,10 +57,38 @@ select{
 }
 
 input{
+
+  /* Aqui é quase a mesma ideia de cima, mas é mais no sentido de "O input que seja desabilitado... faça isso:" */
   &[disabled]{
     background-color: var(--surface-disabled);
     border: 1px solid var(--stroke-default);
     color: var(--text-primary);
   }
-  /* Aqui é quase a mesma ideia de cima, mas é mais no sentido de "O input que seja desabilitado... faça isso:" */
+
+  /* Por conta do atributo "Required", podemos utilizar esses campos invalidados para definirmos estilização quando der erro ao submeter a ação do campo */
+  &:invalid{
+    border: 0.125rem solid var(--semantic-error);
+  }
+
+  &:valid + .error{
+    display: none;
+
+  }
+
+  & + small{
+    font: var(--text-sm);
+    color: #78716C;
+    display: inline-block; /*O Small é inline e não recebe margin. Por isso definimos que seja block, para poder receber a característica*/
+    margin-top: 0.25rem;
+  }
+
+  &[required] + .error{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    font: var(--text-sm);
+    color: var(--semantic-error);
+    margin-top: .25rem;
+  }
+  
 }

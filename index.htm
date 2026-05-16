@@ -139,9 +139,9 @@
             <div class="input-wrapper flex-2">
               <label for="city">Cidade</label>
               <input
+              type="text"
               name="city"
               id="city"
-              type="text"
               value="São Paulo" 
               disabled>
               <!-- 
@@ -153,16 +153,53 @@
             <div class="input-wrapper flex-1">
               <label for="state">Estado</label>
               <input
+              type="text"
               name="state"
               id="state"
-              type="text"
               value="SP"
               disabled>
             </div>
           </div>
-          
-
         </fildset>
+
+        <fieldset class="gardian">
+          <legend>Informações do responsável</legend>
+
+          <div class="input-wrapper">
+            <label for="gardian">Nome do responsável</label>
+            <input
+            type="text"
+            name="gardian"
+            id="gardian">            
+            <small>Principal responsável legal e contato de emergência</small> 
+            <!-- O small é como se fosse uma legenda*/ -->
+          </div>
+
+          <div class="input-wrapper">
+            <label for="phone">Contato telefônico</label>
+            <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="(11) 91234 5678">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="mail">Email</label>
+            <input
+            type="email"
+            name="mail"
+            id="mail"
+            required
+            placeholder="Digite seu e-mail">
+            <div class="error">
+              <img src="assets/icons/alert-circle.svg" alt="Círculo de alerta">
+              <span>Insira um e-mail válido</span>
+            </div>
+            <!-- Required: Obriga que o campo seja obrigatório para envio do relatório. -->
+          </div>
+
+        </fieldset>
 
        </form>
     </div>
